@@ -1,0 +1,64 @@
+<!-- Coral Reef Demo Library -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <parent>
+        <groupId>pl.graniec</groupId>
+        <artifactId>cr</artifactId>
+        <version>1</version>
+    </parent>
+    
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>pl.graniec</groupId>
+    <artifactId>cr-demo</artifactId>
+    <packaging>jar</packaging>
+    <version>0.1-SNAPSHOT</version>
+    
+    <name>Coral Reef Demo Library</name>
+    <url>http://graniec.pl/</url>
+    
+    <dependencies>
+   
+        <!-- PulpCore Desktop -->
+        <dependency>
+            <groupId>pl.graniec</groupId>
+            <artifactId>cr-pulpcore-desktop</artifactId>
+            <version>0.5</version>
+        </dependency>
+ 
+        <!-- JUnit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.5</version>
+            <scope>test</scope>
+        </dependency>
+        
+        <!-- JMock -->
+        <dependency>
+            <groupId>org.jmock</groupId>
+            <artifactId>jmock-junit4</artifactId>
+            <version>2.5.1</version>
+            <scope>test</scope>
+        </dependency>
+        
+    </dependencies>
+    
+    <build>
+        <plugins>
+        
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin> 
+                
+        </plugins>
+    </build>
+    
+</project>
+
